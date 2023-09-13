@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial=scale=1.0">
+    <title>Survey Form Project</title>
+    <link href="styles.css" rel="stylesheet">
+  </head>
+  <body>
+    <main class="container">
+      <header class="header">
+        <h1 id="title">Nick's Knacks Survey Form</h1>
+        <p id="description" class="text-center">Thank you for choosing Nick's Knacks! We've created this form so that valued customers like yourself can share their experience with us. </p>
+      </header>
+      <form id="survey-form">
+        <div class="form-group">
+          <label id="name-label" for="name">Name</label>
+          <input id="name" placeholder="Enter Your Name" required class="nick" type="text">
+        </div>
+        <div class="form-group">
+          <label id="email-label" for="email">Email</label>
+          <input id="email" placeholder="Enter Your Email" required class="nick" type="email">
+        </div>
+        <div class="form-group">
+          <label id="number-label" for="age">Age</label>
+          <input id="number" placeholder="Enter Your Age" required class="nick" type="number" min="10" max="99">
+        </div>
+        <div class="form-group">
+          <p>Provide the level of satisfaction with your shopping experience:</p>
+          <select required id="dropdown" class="form-control">
+            <option disabled selected value>Select</option>
+            <option value="vsatisfied">Very Satisfied</option>
+            <option value="satisfied">Satisfied</option>
+            <option value="unsure">Unsure</option>
+            <option value="unsatisfied">Unsatisfied</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <p>Would you recommend us to a friend?</p>
+          <label><input type="radio" class="input-radio" name="user-recommend" value="yes">Yes</label>
+          <label><input type="radio" class="input-radio" name="user-recommend" value="no">No</label>
+          <label><input type="radio" class="input-radio" name="user-recommend" value="maybe">Maybe</label>
+        </div>
+        <div class="form-group">
+          <p>What is your favorite feature of Nick's Knacks</p>
+          <select class="form-control" id="dropdown" required>
+            <option disabled selected value>Select</option>
+            <option>Shopping Cart</option>
+            <option>User Experience</option>
+            <option>Product Selection</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <p>
+            Which would you like to see improved? 
+            <span class="clue">(Check all that apply)</span>
+          </p>
+          <label><input name="prefer" value="shopping-cart" type="checkbox" class="input-checkbox">Shopping Cart
+          </label>
+          <label>
+            <input type="checkbox" name="prefer" value="user-experience" class="input-checkbox">User Experience
+          </label>
+          <label>
+            <input type="checkbox" name="prefer" value="selection" class="input-checkbox">Product Selection
+          </label>
+        </div>
+        <div class="form-group">
+          <p>Comments/Suggestions:</p>
+          <textarea id="comments" class="input-textarea" name="comment" placeholder="Enter your comment here..."></textarea>
+        </div>
+        <div class="form-group">
+          <button type="submit" id="submit" class="submit-button">
+            Submit
+          </button>
+        </div>
+      </form>
+    </main>
+  </body>
+</html>
